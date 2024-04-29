@@ -23,6 +23,7 @@
   <PropertyGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
     <SupportedOSPlatformVersion>21.0</SupportedOSPlatformVersion>
     <AndroidEnableProfiler>true</AndroidEnableProfiler>
+    <AndroidPackageFormat>apk</AndroidPackageFormat>
     <RuntimeIdentifier>android-arm64</RuntimeIdentifier>
   </PropertyGroup>
 
