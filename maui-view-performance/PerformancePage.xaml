@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="maui_view_performance.PerformancePage"
              Title=".NET MAUI View Performance">
-  <Grid x:Name="_grid">
+  <Grid x:Name="_grid" Margin="2" RowSpacing="2" ColumnSpacing="2">
     <Grid.ColumnDefinitions>
       <ColumnDefinition />
       <ColumnDefinition />
