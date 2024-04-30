@@ -15,20 +15,22 @@ public partial class PerformancePage : ContentPage
 			{
 				View view;
 
-				switch (i % 4)
+				switch (i % 5)
 				{
 					case 0:
 					default:
 						var label = new Label
 						{
-							Text = $"Label {i},{j}",
+							Text = $"{i},{j}",
+							VerticalTextAlignment = TextAlignment.Center,
+							HorizontalTextAlignment = TextAlignment.Center,
 						};
 						view = label;
 						break;
 					case 1:
 						var button = new Button
 						{
-							Text = $"Button {i},{j}",
+							Text = $"{i},{j}",
 						};
 						view = button;
 						break;
@@ -37,11 +39,15 @@ public partial class PerformancePage : ContentPage
 						view = check;
 						break;
 					case 3:
-						var radio = new RadioButton
-						{
-							Content = $"Radio {i},{j}",
-						};
+						var radio = new RadioButton();
 						view = radio;
+						break;
+					case 4:
+						var entry = new Entry
+						{
+							Text = $"{i},{j}",
+						};
+						view = entry;
 						break;
 				}
 
